@@ -1,5 +1,5 @@
 {
-  "name": "vue-use-gamepad",
+  "name": "@b-n-join-a-3/vue-use-gamepad",
   "license": "MIT",
   "version": "0.0.0",
   "description": "🎮 A Vue composable for gamepad support",
