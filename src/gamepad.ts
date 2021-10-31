@@ -55,7 +55,7 @@ export default function (app: App, options: ComposableOptions) {
     }
 
     public run() {
-      window.dispatchEvent(new Event('gamepadinput'));
+      window.dispatchEvent(new CustomEvent('gamepadinput'));
       this.gamepadButtonHandler()
       this.animationFrame = requestAnimationFrame(this.run.bind(this));
     }

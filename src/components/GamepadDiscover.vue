@@ -1,5 +1,6 @@
 <template>
-  <slot :gamepads="gamepads" />
+  <slot name="no-gamepads" v-if="$slots['no-gamepads'] && gamepads.length == 0" />
+  <slot v-else :gamepads="gamepads" />
 </template>
 
 <script lang="ts">

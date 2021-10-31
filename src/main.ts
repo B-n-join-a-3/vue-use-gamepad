@@ -66,8 +66,6 @@ export default {
     const gamepad = new Gamepad();
     app.config.globalProperties.$gamepad = gamepad
 
-    /* const Gamepad = GamepadFactory(app, { ...DefaultOptions, ...options });
-    const gamepad = new Gamepad(); */
     app.component(GamepadDiscover.name, GamepadDiscover)
     app.component(GamepadResolver.name, GamepadResolver)
 

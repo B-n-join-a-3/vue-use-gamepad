@@ -20,7 +20,10 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "serve": "vite preview",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress-vite dev docs",
+    "docs:build": "vuepress-vite build docs",
+    "docs:info": "vuepress-vite info"
   },
   "publishConfig": {
     "access": "public"
@@ -31,8 +34,14 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.4",
     "@vue/compiler-sfc": "^3.1.2",
+    "@vue/component-compiler-utils": "^3.3.0",
+    "@vuepress/plugin-nprogress": "^2.0.0-beta.27",
+    "@vuepress/plugin-pwa": "^1.8.2",
+    "@vuepress/plugin-register-components": "^2.0.0-beta.27",
+    "@vuepress/plugin-search": "^1.8.2",
     "typescript": "^4.3.2",
     "vite": "^2.3.8",
-    "vue-tsc": "^0.28.1"
+    "vue-tsc": "^0.28.1",
+    "vuepress-vite": "^2.0.0-beta.27"
   }
 }
