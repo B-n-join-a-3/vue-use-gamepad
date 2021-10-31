@@ -11,7 +11,9 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-nprogress',
     '@vuepress/plugin-pwa',
-    '@vuepress/plugin-search',
+    ['@vuepress/search', {
+      searchMaxSuggestions: 10
+    }],
     [
       '@vuepress/register-components',
       {
