@@ -10,12 +10,12 @@ export default {
   name: 'GamepadResolver',
   props: {
     gamepad: {
-      type: Gamepad
+      type: Object
     }
   },
   data() {
     return {
-      gamepadData: Gamepad,
+      gamepadData: Object,
     }
   },
   mounted() {

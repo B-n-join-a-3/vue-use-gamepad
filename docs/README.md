@@ -13,22 +13,24 @@ features:
 footer: MIT Licensed | Copyright © 2021-present Alexander Wennerstrøm
 ---
 
-<GamepadDiscover>
-  <template v-slot="{gamepads}">
-    <div
-      v-for="(gamepad, index) in gamepads"
-      :key="index"
-    >
-      <controller :gamepad="gamepad" />
-      <br />
-      {{ gamepad.id }} - {{gamepad.mapping}}
-      <br />
-    </div>
-  </template>
-  <template v-slot:no-gamepads>
-    <h4 style="text-align:center;background-color:var(--c-brand);color:var(--c-bg);padding:15px;">Press any key on a gamepad to connect it</h4>
-  </template>
-</GamepadDiscover>
+<ClientOnly>
+  <GamepadDiscover>
+    <template v-slot="{gamepads}">
+      <div
+        v-for="(gamepad, index) in gamepads"
+        :key="index"
+      >
+        <controller :gamepad="gamepad" />
+        <br />
+        {{ gamepad.id }} - {{gamepad.mapping}}
+        <br />
+      </div>
+    </template>
+    <template v-slot:no-gamepads>
+      <h4 style="text-align:center;background-color:var(--c-brand);color:var(--c-bg);padding:15px;">Press any key on a gamepad to connect it</h4>
+    </template>
+  </GamepadDiscover>
+</ClientOnly>
 
 ### As Easy as 1, 2, 3
 

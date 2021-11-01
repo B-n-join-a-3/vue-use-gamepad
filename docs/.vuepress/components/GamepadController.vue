@@ -202,7 +202,7 @@ export default {
   },
   props: {
     gamepad: {
-      type: Gamepad,
+      type: Object,
       default: null
     }
   },
