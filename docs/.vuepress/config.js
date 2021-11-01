@@ -4,7 +4,7 @@ module.exports = {
   lang: 'en-US',
   title: 'Vue use gamepad',
   description: 'Vue use gamepad documentation site',
-
+  base: '/vue-use-gamepad/',
   themeConfig: {
     logo: 'https://vuejs.org/images/logo.png',
   },
